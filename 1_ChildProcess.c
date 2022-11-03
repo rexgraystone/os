@@ -1,7 +1,7 @@
 /*  
 1.  Write a C program to create a new process 
-    that executes a new program using system 
-    calls fork(), execlp() & wait().
+    that executes a new program using the following 
+    system calls: fork(), execlp() & wait().
 */
 
 #include <stdio.h>
