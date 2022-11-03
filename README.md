@@ -32,7 +32,7 @@ This repository contains all the C programs that I have executed for my Operatin
     or
 
     ``` bash
-        git clone https://github.com/rexgraystone/daa.git
+        git clone https://github.com/rexgraystone/os.git
     ```
 
 2. Change the directory to the cloned repository:
