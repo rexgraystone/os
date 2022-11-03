@@ -28,51 +28,51 @@ This repository contains all the C programs that I have executed for my Operatin
     - Ubuntu -
 
     ```bash
-        sudo apt install gcc
+    sudo apt install gcc
     ```
 
     - Arch Linux -
 
     ```bash
-        sudo pacman -S gcc
+    sudo pacman -S gcc
     ```
 
     - macOS -
 
     ```bash
-        brew install gcc
+    brew install gcc
     ```
 
     Additionaly, if you are using Windows, follow the steps specified [here](https://www.scaler.com/topics/c/c-compiler-for-windows/).
 
-2. Clone the repository using the following command:
+2. Clone the repository running the following command in your preferred terminal:
 
     ``` bash
-        gh repo clone rexgraystone/os
+    gh repo clone rexgraystone/os
     ```
 
     or
 
     ``` bash
-        git clone https://github.com/rexgraystone/os.git
+    git clone https://github.com/rexgraystone/os.git
     ```
 
 3. Change the directory to the cloned repository:
 
     ``` bash
-        cd os
+    cd os
     ```
 
 4. Compile the C program using the following command:
 
     ``` bash
-        gcc <C File Name> -o <Output File Name>
+    gcc <C File Name> -o <Output File Name>
     ```
 
 5. Run the program using the following command:
 
     ``` bash
-        ./<Output File Name>
+    ./<Output File Name>
     ```
 
 ### Note
