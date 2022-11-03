@@ -6,20 +6,20 @@ This repository contains all the C programs that I have executed for my Operatin
 
 | Serial No. | C File Name | Description |
 | :---: | :--- | :--- |
-| 1  | 1_ChildProcess.c  | A C program to create a new process that executes a new program using the following system calls: fork(), execlp() & wait(). |
-| 2  | 2_PID.c  | A C program to display PID and PPID using system calls getpid () & getppid (). |
-| 3  | 3_Files.c  | A C program using I/O system calls open(), read() & write() to copy contents of one file to another file. |
-| 4  | 4_MultiThread.c  | A C program to implement multithreaded program using pthreads. |
-| 5  | 5_RoundRobin.c  | A C program to simulate the Round Robin CPU scheduling algorithms. |
-| 6  | 6_ProdCons.c  | A C program to simulate producer-consumer problem using semaphores. |
+| 1  | [1_ChildProcess.c](https://github.com/rexgraystone/os/blob/master/1_ChildProcess.c)  | A C program to create a new process that executes a new program using the following system calls: fork(), execlp() & wait(). |
+| 2  | [2_PID.c](https://github.com/rexgraystone/os/blob/master/2_PID.c)  | A C program to display PID and PPID using system calls getpid () & getppid (). |
+| 3  | [3_Files.c](https://github.com/rexgraystone/os/blob/master/3_Files.c)  | A C program using I/O system calls open(), read() & write() to copy contents of one file to another file. |
+| 4  | [4_MultiThread.c](https://github.com/rexgraystone/os/blob/master/4_MultiThread.c)  | A C program to implement multithreaded program using pthreads. |
+| 5  | [5_RoundRobin.c](https://github.com/rexgraystone/os/blob/master/5_RoundRobin.c)  | A C program to simulate the Round Robin CPU scheduling algorithms. |
+| 6  | [6_ProdCons.c](https://github.com/rexgraystone/os/blob/master/6_ProdCons.c)  | A C program to simulate producer-consumer problem using semaphores. |
 
 ## Miscellaneous Programs
 
 | Serial No. | C File Name | Description |
 | :---: | :--- | :--- |
-| 1  | M1_LSearch.c  | A C program to search for a key element in an array using linear search algorithm. |
-| 2  | M2_BSearch.c  | A C program to implement Binary Search using Recursion. |
-| 3  | M3_Palindrome.c  | A C program to find whether a given string is a palindrome or not. |
+| 1  | [M1_LSearch.c](https://github.com/rexgraystone/os/blob/master/M1_LSearch.c)  | A C program to search for a key element in an array using linear search algorithm. |
+| 2  | [M2_BSearch.c](https://github.com/rexgraystone/os/blob/master/M2_BSearch.c)  | A C program to implement Binary Search using Recursion. |
+| 3  | [M3_Palindrome.c](https://github.com/rexgraystone/os/blob/master/M3_Palindrome.c)  | A C program to find whether a given string is a palindrome or not. |
 
 ## How to Run
 
