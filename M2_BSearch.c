@@ -1,3 +1,7 @@
+/*
+    M2. Write a program to search for a key element in an array using binary search algorithm.
+*/
+
 #include <stdio.h>
 
 int BSearch(int arr[], int l, int h, int n)

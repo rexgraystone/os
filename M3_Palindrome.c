@@ -1,3 +1,7 @@
+/*
+    M3. Write a program to check whether a given string is a palindrome or not.
+*/
+
 #include <stdio.h>
 
 void palindrome(int n)

@@ -1,3 +1,7 @@
+/*
+    M1. Write a program to search for a key element in an array using linear search algorithm.
+*/
+
 #include <stdio.h>
 
 int main()
