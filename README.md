@@ -19,26 +19,28 @@ This repository contains all the C programs that I have executed for my Operatin
 
 1. Clone the repository using the following command:
 
-``` bash
-    gh repo clone rexgraystone/os
-```
+    ``` bash
+        gh repo clone rexgraystone/os
+    ```
 
-1. Change the directory to the cloned repository:
+2. Change the directory to the cloned repository:
 
-``` bash
-    cd os
-```
-1. Compile the C program using the following command: 
+    ``` bash
+        cd os
+    ```
 
-``` bash
-    gcc <C File Name> -o <Output File Name>
-```
+3. Compile the C program using the following command:
 
-1. Run the program using the following command:
+    ``` bash
+        gcc <C File Name> -o <Output File Name>
+    ```
 
-``` bash
-    ./<Output File Name>
-```
+4. Run the program using the following command:
+
+    ``` bash
+        ./<Output File Name>
+    ```
+
 ### Note
 
 The programs are written in C and compiled using GCC compiler on macOS Ventura 13.0.
