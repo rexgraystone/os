@@ -13,6 +13,32 @@ This repository contains all the C programs that I have executed for my Operatin
 | 5  | 5_RoundRobin.c  | Write C program to simulate the Round Robin CPU scheduling algorithms. |
 | 6  | 6_ProdCons.c  | Write a C program to simulate producer-consumer problem using semaphores. |
 
+## Miscellaneous Programs
+
+## How to Run
+
+1. Clone the repository using the following command:
+
+``` bash
+    gh repo clone rexgraystone/os
+```
+
+1. Change the directory to the cloned repository:
+
+``` bash
+    cd os
+```
+1. Compile the C program using the following command: 
+
+``` bash
+    gcc <C File Name> -o <Output File Name>
+```
+
+1. Run the program using the following command:
+
+``` bash
+    ./<Output File Name>
+```
 ### Note
 
 The programs are written in C and compiled using GCC compiler on macOS Ventura 13.0.
