@@ -1,5 +1,5 @@
 /*
-    5. 5.Write C program to simulate the Round Robin CPU scheduling algorithms.
+    5. Write C program to simulate the Round Robin CPU scheduling algorithms.
 */
 
 #include <stdio.h>
