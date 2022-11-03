@@ -23,6 +23,12 @@ This repository contains all the C programs that I have executed for my Operatin
         gh repo clone rexgraystone/os
     ```
 
+    or
+
+    ``` bash
+        git clone https://github.com/rexgraystone/daa.git
+    ```
+
 2. Change the directory to the cloned repository:
 
     ``` bash
