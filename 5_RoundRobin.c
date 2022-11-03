@@ -6,7 +6,7 @@
 
 void main()
 {
-    // initlialize the variable name
+    // initialize the variable name
     int i, NOP, sum=0,count=0, y, quant, wt=0, tat=0, at[10], bt[10], temp[10];
     float avg_wt, avg_tat;
     printf("Total number of process in the system: ");
