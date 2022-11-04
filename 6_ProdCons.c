@@ -5,15 +5,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int mutex=1, full=0, empty=3, x=0; // Initialization of semaphores 
+int mutex = 1, full = 0, empty = 3, x = 0; // Initialization of semaphores 
 
 void producer(); // producer() Function prototypes
 void consumer(); // consumer() Function prototypes
 
 int main() {
-    int n;
-    printf("\n1. Producer\n2. Consumer\n3. Exit");
-    while(1) {
+    int n; // n = number of processes
+    int opt; // opt = option
+    printf("\n1. Producer\n2. Consumer\n3. Exit"); // print the menu
+    do
+    {
         printf("\nEnter your choice: ");
         scanf("%d", &n);
         switch(n) {
@@ -39,11 +41,13 @@ int main() {
                 exit(0);
                 break;
         }
-    }
+        printf("\nDo you wish to continue? (Yes = 1, No = 0): "); // ask the user if he/she wants to continue
+        scanf("%d", &opt); // store the option in opt
+    } while (opt == 1); // do-while loop to continue the program
     return 0;
 }
 
-void producer() {
+void producer() { // producer() Function definition
     --mutex;    // acquire mutex lock
     ++full;     // increment full
     --empty;    // decrement empty
@@ -52,7 +56,7 @@ void producer() {
     ++mutex;    // release mutex lock
 }
 
-void consumer() {
+void consumer() { // consumer() Function definition
     --mutex;    // acquire mutex lock
     --full;     // decrement full
     ++empty;    // increment empty

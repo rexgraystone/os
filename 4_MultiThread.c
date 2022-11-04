@@ -18,11 +18,11 @@ void *myThreadFun(void * vargp)  {
 }
 
 int main() {
-    int i;
-    pthread_t tid;
+    int i; // i = loop variable
+    pthread_t tid; // tid = thread ID
     for (i = 0; i < 3; i++) { // for loop to create three threads
-        pthread_create(&tid, NULL, myThreadFun, (void *)&tid);
+        pthread_create(&tid, NULL, myThreadFun, (void *)&tid); // create a thread
     }
-    pthread_exit(NULL);
+    pthread_exit(NULL); // exit the thread
     return 0;
 }
