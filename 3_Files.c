@@ -9,8 +9,7 @@
 #include <sys/types.h>
 #include <fcntl.h>
 
-int main()
-{
+int main() {
     char buff;
     int fd, fd1;
     fd = open("one.txt", O_RDONLY);

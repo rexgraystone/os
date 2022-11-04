@@ -15,16 +15,13 @@ void consumer();
 int wait(int);
 int signal(int);
 
-int main()
-{
+int main() {
     int n;
     printf("\n1.Producer\n2.Consumer\n3.Exit");
-    while(1)
-    {
+    while(1) {
         printf("\nEnter your choice: ");
         scanf("%d", &n);
-        switch(n)
-        {
+        switch(n) {
             case 1: 
                 if((mutex==1)&&(empty!=0))
                     producer();
@@ -47,18 +44,15 @@ int main()
     return 0;
 }
 
-int wait(int s)
-{
+int wait(int s) {
     return (--s);
 }
 
-int signal(int s)
-{
+int signal(int s) {
     return(++s);
 }
 
-void producer()
-{
+void producer() {
     mutex=wait(mutex);
     full=signal(full); //producer has placed the item and thus the value of “full” is increased by 1
     empty=wait(empty); //producer produces an item then the value of “empty” is reduced by 1
@@ -68,8 +62,7 @@ void producer()
     mutex=signal(mutex);
 }
 
-void consumer()
-{
+void consumer() {
     mutex=wait(mutex);
     full=wait(full); //consumer is removing an item from buffer, therefore the value of
     //“full” is reduced by 1

@@ -8,19 +8,16 @@
 #include <sys/wait.h> 
 #include <unistd.h> 
 
-int main()
-{
+int main() {
     int pid;
     pid = fork();
-    if(!pid)
-    {
+    if(!pid) {
         printf("Child Process..."); 
         printf("\n\nChild PID: %d", getpid()); 
         printf("\nParent PID: %d", getppid()); 
         printf("\n\nFinished with child\n");
     }
-    else
-    {
+    else {
         wait(NULL);
         printf("\nParent Process..."); 
         printf("\nParent PID: %d", getpid()); 
