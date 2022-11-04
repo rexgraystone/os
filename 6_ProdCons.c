@@ -12,7 +12,7 @@ void consumer(); // consumer() Function prototypes
 
 int main() {
     int n;
-    printf("\n1.Producer\n2.Consumer\n3.Exit");
+    printf("\n1. Producer\n2. Consumer\n3. Exit");
     while(1) {
         printf("\nEnter your choice: ");
         scanf("%d", &n);
@@ -52,7 +52,7 @@ void consumer() {
     --mutex;
     --full;
     ++empty;
-    printf("Consumer consumes item %d", x);
+    printf("Consumer consumes the item %d", x);
     x--;
     ++mutex;
 }
