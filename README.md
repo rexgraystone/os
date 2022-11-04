@@ -87,4 +87,4 @@ This repository contains all the C programs that I have executed for my Operatin
 ### Note
 
 The programs are written in C and compiled using GCC compiler on macOS Ventura 13.0.
-These programs will work on any Linux distribution and macOS. However, the programs may not work on Windows.
+These programs will work on any Linux distribution and macOS. However, the programs may not work on Windows. To avoid facing issues on Windows, it is recommended to use a virtual machine with a Linux distribution instead.
