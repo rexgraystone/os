@@ -12,7 +12,8 @@ int g = 0; // global variable
 void *myThreadFun(void * vargp)  {
     int *myid = (int *)vargp; // store the value argument passed to this thread
     static int s = 0; // static variable
-    ++s; ++g; // increment both static and global variables
+    ++s; // increment static variable
+    ++g; // increment global variables
     printf("Thread ID: %d, Static: %d, Global: %d\n", *myid, ++s, ++g); // print the argument, static and global variables
 }
 
