@@ -48,15 +48,15 @@ void producer() {
     ++full;     // increment full
     --empty;    // decrement empty
     x++;        // increment x
-    printf("Producer produces the item %d", x);
-    ++mutex;
+    printf("Producer produces the item %d", x); // print the item produced
+    ++mutex;    // release mutex lock
 }
 
 void consumer() {
     --mutex;    // acquire mutex lock
     --full;     // decrement full
     ++empty;    // increment empty
-    printf("Consumer consumes the item %d", x);
+    printf("Consumer consumes the item %d", x); // print the item consumed
     x--;        // decrement x
-    ++mutex;
+    ++mutex;    // release mutex lock
 }
