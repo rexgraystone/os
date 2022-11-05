@@ -7,7 +7,7 @@
 void palindromeCheck(int n) { // n = number of characters in the string
     int sum = 0, rem, temp; // sum = sum of the digits, rem = remainder, temp = temporary variable
     temp = n; // store the number in temp
-    while(n!=0) { // while the number is not equal to 0
+    while(n != 0) { // while the number is not equal to 0
         rem = n % 10; // find the remainder
         sum = (sum * 10) + rem; // find the sum
         n = n / 10; // divide the number by 10
