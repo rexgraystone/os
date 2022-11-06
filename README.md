@@ -10,7 +10,7 @@ This repository contains all the C programs that I have executed for my Operatin
 | 2  | [2_processID.c](https://github.com/rexgraystone/os/blob/master/2_processID.c)  | A C program to display PID and PPID using system calls getpid () & getppid (). |
 | 3  | [3_fileOperations.c](https://github.com/rexgraystone/os/blob/master/3_fileOperations.c)  | A C program using I/O system calls open(), read() & write() to copy contents of one file to another file. |
 | 4  | [4_multiThreading.c](https://github.com/rexgraystone/os/blob/master/4_multiThreading.c)  | A C program to implement multithreaded program using pthreads. |
-| 5  | [5_roundRobinScheduling.c](https://github.com/rexgraystone/os/blob/master/5_roundRobinScheduling.c)  | A C program to simulate the Round Robin CPU scheduling algorithms. |
+| 5  | [5_roundRobin.c](https://github.com/rexgraystone/os/blob/master/5_roundRobin.c)  | A C program to simulate the Round Robin CPU scheduling algorithms. |
 | 6  | [6_producerConsumer.c](https://github.com/rexgraystone/os/blob/master/6_producerConsumer.c)  | A C program to simulate producer-consumer problem using semaphores. |
 
 ## Miscellaneous Programs
