@@ -4,6 +4,7 @@
 .vscode/tasks.json
 
 *.dSYM
+*.pkgf
 
 *.out
 
