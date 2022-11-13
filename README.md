@@ -12,6 +12,10 @@ This repository contains all the C programs that I have executed for my Operatin
 | 4  | [4_multiThreading.c](https://github.com/rexgraystone/os/blob/master/4_multiThreading.c)  | A C program to implement multithreaded program using pthreads. |
 | 5  | [5_roundRobin.c](https://github.com/rexgraystone/os/blob/master/5_roundRobin.c)  | A C program to simulate the Round Robin CPU scheduling algorithms. |
 | 6  | [6_producerConsumer.c](https://github.com/rexgraystone/os/blob/master/6_producerConsumer.c)  | A C program to simulate producer-consumer problem using semaphores. |
+| 7  | [7_bankersAlgorithm.c](https://github.com/rexgraystone/os/blob/master/7_bankersAlgorithm.c)  | A C program to implement Banker's Algorithm. |
+| 8  | [8_fifoPage.c](https://github.com/rexgraystone/os/blob/master/8_fifoPage.c)  | A C program to implement FIFO page replacement algorithm. |
+| 9  | [9_singleLevelFile.c](https://github.com/rexgraystone/os/blob/master/9_singleLevelFile.c)  | A C program to implement single level directory structure. |
+| 10  | [10_indexedFile.c](https://github.com/rexgraystone/os/blob/master/10_indexedFile.c)  | A C program to implement indexed file directory structure. |
 
 ## Miscellaneous Programs
 
