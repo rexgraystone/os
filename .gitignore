@@ -1,8 +1,11 @@
 .DS_Store
 
+
 .vscode/*
-.vscode/launch.json
-.vscode/tasks.json
+.vscode/*.json
+!.vscode/launch.json
+
+!.idea/
 
 *.dSYM
 *.pkgf
