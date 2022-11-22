@@ -5,7 +5,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 
-int mutex = 1, full = 0, empty = 3, x = 0; // Initialization of semaphores 
+int mutex = 1, full = 0, empty = 3, itemNo = 0; // Initialization of semaphores 
 
 void producer(); // producer() Function prototypes
 void consumer(); // consumer() Function prototypes
@@ -45,8 +45,7 @@ void producer() { // producer() Function definition
     --mutex;    // acquire mutex lock
     ++full;     // increment full
     --empty;    // decrement empty
-    x++;        // increment x
-    printf("Producer produces the item %d", x); // print the item produced
+    printf("Producer produces the item %d", ++itemNo); // print the item produced and increment itemNo
     ++mutex;    // release mutex lock
 }
 
@@ -54,7 +53,6 @@ void consumer() { // consumer() Function definition
     --mutex;    // acquire mutex lock
     --full;     // decrement full
     ++empty;    // increment empty
-    printf("Consumer consumes the item %d", x); // print the item consumed
-    x--;        // decrement x
+    printf("Consumer consumes the item %d", itemNo--); // print the item consumed and decrement itemNo
     ++mutex;    // release mutex lock
 }

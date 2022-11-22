@@ -5,6 +5,8 @@
 .vscode/*.json
 !.vscode/launch.json
 
+.idea
+.idea/*
 !.idea/
 
 *.dSYM
