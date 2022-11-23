@@ -14,24 +14,24 @@ int main() {
     for(i = 0; i < p; i++) {
         completed[i] = 0;
     }
-    printf("\n\nEnter the no of resources : ");
+    printf("\n\nEnter the no of resources: ");
     scanf("%d", &r);
-    printf("\n\nEnter the Max Matrix for each process :"); 
+    printf("\n\nEnter the Max Matrix for each process:"); 
     for(i = 0; i < p; i++) {
         printf("\nFor process %d: ", i + 1);
         for(j = 0; j < r; j++) {
             scanf("%d", &Max[i][j]);
         }
     }
-    printf("\n\nEnter the allocation for each process : ");
+    printf("\n\nEnter the allocation for each process: ");
     for(i = 0; i < p; i++) {
         printf("\nFor process %d: ",i + 1);
         for(j = 0; j < r; j++) {
             scanf("%d", &alloc[i][j]);
         }
     }
-    printf("\n\nEnter the Available Resources : ");
-    for(i= 0; i < r; i++) {
+    printf("\n\nEnter the Available Resources: ");
+    for(i = 0; i < r; i++) {
         scanf("%d", &avail[i]);
     }
     for(i = 0; i < p; i++) {
@@ -63,7 +63,7 @@ int main() {
                 }
             }
             if(process != -1)
-            break;
+                break;
         }
         if(process != -1) {
             printf("\nProcess %d runs to completion!", process + 1);
