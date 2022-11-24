@@ -31,9 +31,9 @@ int main() {
     }
     while(ch == 1); 
     printf("\n\nDirectory name is: %s\n", mdname);
-    printf("\nFiles names are: ");
+    printf("\nFiles names are: \n");
     for(i = 0; i < j; i++) {
-        printf("\n%s", fname[i]);
+        printf("%s\n", fname[i]);
     }
     return 0;
 }
