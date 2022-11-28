@@ -5,15 +5,17 @@
 # include <stdio.h>
 # include <stdlib.h>
 
-int mutex = 1, full = 0, empty = 3, itemNo = 0; // Initialization of semaphores 
+int mutex = 1, full = 0, empty = 3, itemNo = 0; // initialize the semaphores
 
-void producer(); // producer() Function prototypes
-void consumer(); // consumer() Function prototypes
+int waitOperation(int);
+int signalOperation(int);
+void producer(); 
+void consumer(); 
 
 int main() {
-    int n; // n = number of processes
-    int opt; // opt = option
-    printf("\n1. Producer\n2. Consumer\n"); // print the menu
+    int n; 
+    int opt; 
+    printf("\n1. Producer\n2. Consumer\n"); 
     do {
         printf("\nEnter your choice: ");
         scanf("%d", &n);
@@ -35,24 +37,32 @@ int main() {
                 }
                 break;
         }
-        printf("\nDo you wish to continue? (Yes = 1, No = 0): "); // ask the user if he/she wants to continue
-        scanf("%d", &opt); // store the option in opt
-    } while (opt == 1); // do-while loop to continue the program
+        printf("\nDo you wish to continue? (Yes = 1, No = 0): "); 
+        scanf("%d", &opt); 
+    } while (opt == 1); 
     return 0;
 }
 
-void producer() { // producer() Function definition
-    --mutex;    // acquire mutex lock
-    ++full;     // increment full
-    --empty;    // decrement empty
-    printf("Producer produces the item %d", ++itemNo); // print the item produced and increment itemNo
-    ++mutex;    // release mutex lock
+int waitOperation(int s) {
+    return (--s);
+}
+
+int signalOperation(int s) {
+    return (++s);
+}
+
+void producer() { 
+    mutex = waitOperation(mutex);    // acquire mutex lock
+    full = signalOperation(full);     
+    empty = waitOperation(empty);    
+    printf("Producer produces the item %d", ++itemNo); 
+    mutex = signalOperation(mutex);    // release mutex lock
 }
 
 void consumer() { // consumer() Function definition
-    --mutex;    // acquire mutex lock
-    --full;     // decrement full
-    ++empty;    // increment empty
-    printf("Consumer consumes the item %d", itemNo--); // print the item consumed and decrement itemNo
-    ++mutex;    // release mutex lock
+    mutex = waitOperation(mutex);    // acquire mutex lock
+    full = waitOperation(full);     
+    empty = signalOperation;    
+    printf("Consumer consumes the item %d", itemNo--); 
+    mutex = signalOperation(mutex);    // release mutex lock
 }
