@@ -41,10 +41,23 @@ int main() {
     return 0;
 }
 
+
+/**
+ * @brief is used to wait for the semaphore
+ * 
+ * @param s  
+ * @return int 
+ */
 int waitOperation(int s) {
     return (--s);
 }
 
+/**
+ * @brief is used to signal the semaphore
+ * 
+ * @param s 
+ * @return int 
+ */
 int signalOperation(int s) {
     return (++s);
 }
