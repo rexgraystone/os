@@ -40,28 +40,25 @@ int main() {
     } while (opt == 1); 
     return 0;
 }
-
-
 /**
  * @brief is used to wait for the semaphore
- * 
  * @param s  
  * @return int 
  */
 int waitOperation(int s) {
     return (--s);
 }
-
 /**
  * @brief is used to signal the semaphore
- * 
  * @param s 
  * @return int 
  */
 int signalOperation(int s) {
     return (++s);
 }
-
+/**
+ * @brief simulates a producer that produces an item and puts it in the buffer
+ */
 void producer() { 
     mutex = waitOperation(mutex);    // acquire mutex lock
     full = signalOperation(full);     
@@ -69,8 +66,11 @@ void producer() {
     printf("Producer produces the item %d", ++itemNo); 
     mutex = signalOperation(mutex);    // release mutex lock
 }
-
-void consumer() { // consumer() Function definition
+/**
+ * @brief simulates a consumer that consumes the item if it is available in the buffer
+ * 
+ */
+void consumer() { 
     mutex = waitOperation(mutex);    // acquire mutex lock
     full = waitOperation(full);     
     empty = signalOperation;    
