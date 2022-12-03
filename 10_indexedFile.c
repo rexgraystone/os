@@ -13,7 +13,7 @@ int main() {
     x: printf("Enter the index block: ");
     scanf("%d", &ind);
     if(f[ind] != 1) {
-        printf("Enter no of blocks needed and no of files for the index %d on the disk : \n", ind);
+        printf("Enter number of blocks needed and number of files for the index %d on the disk : \n", ind);
         scanf("%d", &n);
     }
     else {
@@ -35,8 +35,7 @@ int main() {
         for(k = 0; k < n; k++) {
             printf("%d-------->%d : %d\n", ind, index[k], f[index[k]]);
         }
-    }
-    else {
+    } else {
         printf("File in the index is already allocated \n");
         printf("Enter another file indexed");
         goto y;
@@ -45,8 +44,7 @@ int main() {
     scanf("%d", &c);
     if(c == 1) {
         goto x;
-    }
-    else {
+    } else {
         exit(0);
     }
     return 0;

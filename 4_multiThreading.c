@@ -7,22 +7,28 @@
 #include <unistd.h>
 #include <pthread.h>
 
-int g = 0; // global variable
+int g = 0; 
 
-void *myThreadFun(void * vargp)  {
-    int *myid = (int *)vargp; // store the value argument passed to this thread
-    static int s = 0; // static variable
-    ++s; // increment static variable
-    ++g; // increment global variables
-    printf("Thread ID: %d, Static: %d, Global: %d\n", *myid, ++s, ++g); // print the argument, static and global variables
+/**
+ * @brief prints the thread ID, static variable and global variable 
+ * 
+ * @param vargp 
+ * @return void* 
+ */
+void *myThreadFunc(void * vargp)  {
+    int *myID = (int *)vargp; // store the value argument passed to this thread
+    static int s = 0; 
+    ++s; 
+    ++g; 
+    printf("Thread ID: %d, Static: %d, Global: %d\n", *myID, ++s, ++g); 
 }
 
 int main() {
-    int i; // i = loop variable
-    pthread_t tid; // tid = thread ID
-    for (i = 0; i < 3; i++) { // for loop to create three threads
-        pthread_create(&tid, NULL, myThreadFun, (void *)&tid); // create a thread
+    int i; 
+    pthread_t tID; 
+    for (i = 0; i < 3; i++) { 
+        pthread_create(&tID, NULL, myThreadFunc, (void *)&tID); 
     }
-    pthread_exit(NULL); // exit the thread
+    pthread_exit(NULL); 
     return 0;
 }

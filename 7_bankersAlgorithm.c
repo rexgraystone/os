@@ -9,12 +9,12 @@ int main() {
     int Max[10][10], need[10][10], alloc[10][10], availableResources[10], completed[10], safeSequence[10];
     int numProcesses, numResources, i, j, process, count;
     count = 0;
-    printf("Enter the no of processes: ");
+    printf("Enter the number of processes: ");
     scanf("%d", &numProcesses);
     for(i = 0; i < numProcesses; i++) {
         completed[i] = 0;
     }
-    printf("\n\nEnter the no of resources: ");
+    printf("\n\nEnter the number of resources: ");
     scanf("%d", &numResources);
     printf("\n\nEnter the Max Matrix for each process:"); 
     for(i = 0; i < numProcesses; i++) {

@@ -22,14 +22,12 @@ int main() {
         if(i == nf) {
             strcpy(fname[j++], name);
             nf++;
-        }
-        else {
+        } else {
             printf("\nThere is already %s\n", name);
         }
         printf("\nDo you want to enter another file(yes - 1 or no - 0):");
         scanf("%d", &ch);
-    }
-    while(ch == 1); 
+    } while(ch == 1); 
     printf("\n\nDirectory name is: %s\n", mdname);
     printf("\nFiles names are: \n");
     for(i = 0; i < j; i++) {

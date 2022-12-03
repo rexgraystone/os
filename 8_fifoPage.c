@@ -18,7 +18,7 @@ int main() {
         frame[i] = -1;
     }
     j = 0;
-    printf("\tref string\t page frames\n");
+    printf("\tRef string\t Page frames\n");
     for(i = 1; i <= n; i++) {
         printf("%d\t\t", a[i]);
         avail = 0;

@@ -58,6 +58,7 @@ int signalOperation(int s) {
 }
 /**
  * @brief simulates a producer that produces an item and puts it in the buffer
+ * @return void 
  */
 void producer() { 
     mutex = waitOperation(mutex);    // acquire mutex lock
@@ -68,7 +69,7 @@ void producer() {
 }
 /**
  * @brief simulates a consumer that consumes the item if it is available in the buffer
- * 
+ * @return void
  */
 void consumer() { 
     mutex = waitOperation(mutex);    // acquire mutex lock

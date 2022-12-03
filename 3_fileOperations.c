@@ -12,13 +12,13 @@
 int main() {
     char buff; // buff = buffer
     int fd1, fd2; // fd1 = file descriptor for one.txt, fd2 = file descriptor for two.txt
-    fd1 = open("one.txt", O_RDONLY); // open the file one.txt in read only mode
-    fd2 = open("two.txt", O_WRONLY|O_CREAT); // open the file two.txt in write only mode, if it doesn't exist, create it
-    while(read(fd1, &buff, 1)) { // read the file one.txt
-        write(fd2, &buff, 1); // write to the file two.txt
+    fd1 = open("one.txt", O_RDONLY); 
+    fd2 = open("two.txt", O_WRONLY|O_CREAT); 
+    while(read(fd1, &buff, 1)) { 
+        write(fd2, &buff, 1); 
     }
-    printf("The file has been copied successfully.\n"); // print the file has been copied successfully
-    close(fd1); // close the file one.txt
-    close(fd2); // close the file two.txt
+    printf("The file has been copied successfully.\n"); 
+    close(fd1); 
+    close(fd2); 
     return 0; 
 }
