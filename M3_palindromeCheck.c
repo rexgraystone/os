@@ -14,8 +14,7 @@ void palindromeCheck(int n) {
     }
     if(temp == sum) { 
         printf("\n%d is a palindromeCheck.\n", temp); 
-    }
-    else { 
+    } else { 
         printf("\n%d is not a palindromeCheck.\n", temp); 
     }
 }
