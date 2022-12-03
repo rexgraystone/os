@@ -2,8 +2,8 @@
     9. Write a C program to simulate the Single level directory file organization technique.
 */
 
-# include <stdio.h>
-# include <string.h>
+#include <stdio.h>
+#include <string.h>
 
 int main() {
     int nf = 0, i = 0, j = 0, ch;

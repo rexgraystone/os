@@ -2,7 +2,7 @@
     8. Write a C program to simulate FIFO page replacement algorithm.
 */
 
-# include <stdio.h>
+#include <stdio.h>
 
 int main() {
     int i, j, n, a[50], frame[10], no, k, avail, count = 0;

@@ -2,8 +2,8 @@
     7. Write a C program to simulate Bankers algorithm for the purpose of deadlock avoidance.
 */
 
-# include <stdio.h>
-# include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int Max[10][10], need[10][10], alloc[10][10], availableResources[10], completed[10], safeSequence[10];

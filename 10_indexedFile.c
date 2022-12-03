@@ -2,8 +2,8 @@
     10. Write a C program to simulate the indexed file allocation strategy.
 */
 
-# include <stdio.h>
-# include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int f[50], index[50], i, n, st, len, j, c, k, ind, count = 0;
