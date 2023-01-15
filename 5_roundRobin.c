@@ -25,7 +25,6 @@ int main() {
         scanf("%d", &burstTime[i]); 
         temp[i] = burstTime[i]; 
     }
- 
     printf("\nEnter Time Quantum: \t"); 
     scanf("%d", &quantum); 
     printf("\nProcess ID\t\tBurst Time\t Turnaround Time\t Waiting Time\n"); 
