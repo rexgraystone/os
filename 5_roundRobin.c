@@ -14,7 +14,7 @@ int main() {
     int temp[10]; 
     float avgWaitTime; 
     float avgTurnaroundTime; 
-    printf("\nEnter totalTime Number of Processes:\t"); 
+    printf("\nEnter Number of Processes:\t"); 
     scanf("%d", &limit); 
     x = limit; 
     for(i = 0; i < limit; i++) { 
