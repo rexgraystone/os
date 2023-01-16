@@ -15,13 +15,11 @@ int main(int argc, char *arg[]) { // argc = argument count, arg = argument vecto
     if(pID < 0) { 
         printf("Fork failed"); 
         exit(1); 
-    }
-    else if(pID == 0) { 
+    } else if(pID == 0) { 
         printf("\nNow in Child Process and it's output is \n"); 
         execlp("ls", "ls", NULL); // execute the ls command
         exit(0); 
-    }
-    else { // if the process ID is greater than 0
+    } else { // if the process ID is greater than 0
         printf("\nChild Process created successfully\n"); 
         printf("\nIt's Process ID is %d\n", getpid()); 
         wait(NULL); // wait for the child process to finish
