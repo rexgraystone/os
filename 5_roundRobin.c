@@ -55,7 +55,6 @@ int main() {
             i = 0; 
         }
     }
- 
     avgWaitTime = (waitTime * 1.0 / limit); 
     avgTurnaroundTime = (turnaroundTime * 1.0 / limit); 
     printf("\n\nAverage Waiting Time:\t%f", avgWaitTime); 
